@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-title>Authentification</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <form #f= "ngForm" (ngSubmit) = "loginUser(f.value)">
+    <ion-item>
+      
+      <ion-input type="text" name="username" ngModel placeholder="username"></ion-input>
+    </ion-item>
+    <ion-item>
+       
+        <ion-input type="password" name="password" ngModel placeholder="password"></ion-input>
+      </ion-item>
+
+      <ion-button type="submit" color="success">login</ion-button>
+  </form>
+</ion-content>

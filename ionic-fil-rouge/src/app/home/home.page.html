@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Moonawa
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header> 
+    <ion-card-title>XeeweulTransfert</ion-card-title>
+  </ion-card-header>
+ 
+    <ion-card-content>
+      <ion-list>
+          <ion-item>Name:{{contact.Name}}</ion-item>
+          <ion-item>Tel:{{contact.Tel}}</ion-item>
+          <ion-item>Email:<strong>{{contact.Email}}</strong></ion-item>
+        </ion-list>  
+      <ion-img src="{{contact.Location}}"></ion-img>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
